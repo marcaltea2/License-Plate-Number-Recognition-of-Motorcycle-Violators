@@ -1,0 +1,8 @@
+Tensorflow
+python detect_video.py --weights ./checkpoints/custom_yolov3-416 --size 416 --model yolov3 --video ./data/video/motorcycle.mp4 --output ./Database/motorcycle.avi --count --crop
+Tensroflow Lite
+python detect_video.py --weights ./checkpoints/custom_yolov3_tflite-416.tflite --size 416 --model yolov3 --video ./data/video/footage2.mp4 --output ./Database/footage2.avi --framework tflite --count --crop
+
+python detect.py --weights ./checkpoints/custom_yolov3-416 --size 416 --model yolov3 --images ./data/images/test1.jpg --output ./detections/test1.jpg --count --crop
+python detect.py --weights ./checkpoints/custom_yolov3_tflite-416.tflite --size 416 --model yolov3 --images ./data/images/test1.jpg --output ./detections/test1.jpg --framework tflite --count --crop
+
